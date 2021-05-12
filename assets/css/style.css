@@ -1,1 +1,28 @@
-test
+/*font import from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+
+/*-------------------Custom text, margin, paddings*/
+
+
+/*-------------------Media Queries */
+@media only screen and (max-width: 576px)  {
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+.carousel-margin {
+    margin-top: 7em;
+}
+
+header {
+    text-align: center;
+}
+}
+
+
