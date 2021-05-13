@@ -2,27 +2,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Mountains+of+Christmas:wght@400;700&display=swap');
 
 
-/*-------------------Custom text, margin, paddings*/
+
+/*-------------------Colors*/
+body {
+    /*background-image: url("../images/main-background.jpg");*/
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-------------------Header*/
+.main-heading {
+    font-family: 'Mountains of Christmas', sans-serif;
+    font-size: 5em;
+    font-weight: 800;
+    color: #f1d7d7;
+    margin: 50px 50px 0 50px;
+}
+
+.logo-heading {
+    font-family: 'Lato', sans-serif;
+    color: rgba(183, 253, 120, 0.7);
+    margin: 5px 30px 30px 50px;
+}
+
+.nav-menu li a {
+    color: #f1d7d7;
+    background-color:rgba(0, 0, 0, 0.3);
+    width: 120px;
+    border: 2px solid #f1d7d7;
+    border-radius: 25px;
+    
+}
+
+.nav-menu li {
+    text-align: center;
+}
+
+
+.nav-menu li a:hover {
+    background-color:rgba(0, 0, 0, 0.1);
+    width: 120px;
+    border-radius: 25px;
+    
+
+}
+
+
+.nav-menu li a:active {
+    background-color: rgba(183, 253, 120, 0.6);
+}
+
+/*-------------------Hover.css */
+/* :hover style taken from tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
+.hvr-radial-out:before {
+    background-color: rgba(183, 253, 120, 0.6);
+    
+}
+
+/*-------------------Custom text, margin, padding*/
+.main-header {
+    margin: 0;
+    padding: 0;
+}
+
+    
+/*adjusting the size code advise on https://forum.bootstrapstudio.io/*/
+#carouselExampleControls {
+    max-height: 700px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 
 
 /*-------------------Media Queries */
-@media only screen and (max-width: 576px)  {
-.pos-relative {
-    position: relative;
-}
 
-.pos-absolute {
-    position: absolute;
-    display: block;
-    width: 100%;
-}
-.carousel-margin {
-    margin-top: 7em;
-}
+@media only screen and (max-width: 576px) {
+    header {
+        text-align: center;
+    }
 
-header {
-    text-align: center;
-}
-}
+    .nav-menu li a{
+        width: 90%;
+        height: 45px;
+        margin: 0 auto;
+        padding: 0;
+        
+    }
 
-
+    .nav-menu li a:hover {
+        background-color:rgba(0, 0, 0, 0.1);
+        width: 90%;
+        border-radius: 25px;
+    }
+}
