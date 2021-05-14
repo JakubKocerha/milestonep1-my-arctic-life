@@ -5,96 +5,177 @@
 
 /*-------------------Colors*/
 body {
-    /*background-image: url("../images/main-background.jpg");*/
+    background-image: url("../images/testbackground.jpg");
     background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 /*-------------------Header*/
+.main-header {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .main-heading {
     font-family: 'Mountains of Christmas', sans-serif;
     font-size: 5em;
     font-weight: 800;
-    color: #f1d7d7;
+    color: #2e2929;
     margin: 50px 50px 0 50px;
 }
 
 .logo-heading {
     font-family: 'Lato', sans-serif;
-    color: rgba(183, 253, 120, 0.7);
+    color: rgba(50, 82, 22, 0.7);
     margin: 5px 30px 30px 50px;
 }
 
+.nav-menu {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
 .nav-menu li a {
-    color: #f1d7d7;
-    background-color:rgba(0, 0, 0, 0.3);
-    width: 120px;
-    border: 2px solid #f1d7d7;
+    color: #050505;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 125px;
+    border: 2px solid #2e2929;
     border-radius: 25px;
-    
+
 }
 
 .nav-menu li {
     text-align: center;
 }
 
-
+/* :hover style taken from tutorials, before setting the same width of hover, the pseudoclass was rendering with nonstandard rendering customised with hover collections https://ianlunn.github.io/Hover/*/
 .nav-menu li a:hover {
-    background-color:rgba(0, 0, 0, 0.1);
-    width: 120px;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 125px;
     border-radius: 25px;
-    
+
 
 }
 
-
+/*active doesn't work, let's see if it is a problem with the none-existing subpages
 .nav-menu li a:active {
     background-color: rgba(183, 253, 120, 0.6);
-}
+}*/
 
 /*-------------------Hover.css */
 /* :hover style taken from tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
 .hvr-radial-out:before {
-    background-color: rgba(183, 253, 120, 0.6);
-    
+    background-color: rgba(50, 82, 22, 0.3);
+
 }
 
-/*-------------------Custom text, margin, padding*/
-.main-header {
-    margin: 0;
+
+
+/*-------------------Carousel*/
+
+/*adjusting the size, code advise on https://forum.bootstrapstudio.io/*/
+#carouselExampleControls {
+    width: 750px;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 2px;
+    border: 6px solid #2e2929;
+}
+
+/*
+.background-carousel {
+    background-color:black;
+    padding: 40px 0;
+}*/
+
+
+/*------------------- Footer */
+footer {
+    height: 100px;
+    margin-top: 100px;
     padding: 0;
 }
 
-    
-/*adjusting the size code advise on https://forum.bootstrapstudio.io/*/
-#carouselExampleControls {
-    max-height: 700px;
-    max-width: 700px;
-    margin: 0 auto;
+.container-fluid {
+    padding: 0;
 }
 
+
+.social-links {
+    text-align: center
+}
+
+
+.social-links li a i {
+
+    width: 55px;
+    height: 55px;
+    padding: 25px 0;
+    margin: 0 15px;
+    border-radius: 50%;
+    font-size: 35px;
+    line-height: 7px;
+    text-align: center;
+    color: rgba(50, 82, 22, 0.4);
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: rgba(18, 16, 16, 0.5);
+}
 
 
 /*-------------------Media Queries */
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
     header {
         text-align: center;
     }
 
-    .nav-menu li a{
-        width: 90%;
-        height: 45px;
+    .main-heading {
+        font-size: 4em;
+    }
+
+    .nav-menu {
         margin: 0 auto;
-        padding: 0;
-        
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .nav-menu li {
+        margin-bottom: 10px;
+    }
+
+    .nav-menu li a {
+        width: 80%;
+        height: 40px;
+        margin: 0 auto;
+        padding: 0 auto;
+
+
     }
 
     .nav-menu li a:hover {
-        background-color:rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
         width: 90%;
         border-radius: 25px;
+    }
+
+    #carouselExampleControls {
+
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
