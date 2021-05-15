@@ -5,7 +5,7 @@
 
 /*-------------------Colors*/
 body {
-    background-image: url("../images/testbackground.jpg");
+    background-image: url("../images/background-main.jpg");
     background-color: #000000;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,12 +17,12 @@ body {
 .main-header {
     margin: 0;
     padding: 0;
-    height: 100%;
+    
 }
 
 .main-heading {
     font-family: 'Mountains of Christmas', sans-serif;
-    font-size: 5em;
+    font-size: 80px;
     font-weight: 800;
     color: #2e2929;
     margin: 50px 50px 0 50px;
@@ -31,7 +31,7 @@ body {
 .logo-heading {
     font-family: 'Lato', sans-serif;
     color: rgba(50, 82, 22, 0.7);
-    margin: 5px 30px 30px 50px;
+    margin: 5px 50px 30px 50px;
 }
 
 .nav-menu {
@@ -40,9 +40,10 @@ body {
 }
 
 .nav-menu li a {
-    color: #050505;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 125px;
+    color: #e9faed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 130px;
+    font-weight: 700;
     border: 2px solid #2e2929;
     border-radius: 25px;
 
@@ -55,16 +56,16 @@ body {
 /* :hover style taken from tutorials, before setting the same width of hover, the pseudoclass was rendering with nonstandard rendering customised with hover collections https://ianlunn.github.io/Hover/*/
 .nav-menu li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    width: 125px;
+    width: 140px;
     border-radius: 25px;
 
 
 }
 
-/*active doesn't work, let's see if it is a problem with the none-existing subpages
-.nav-menu li a:active {
-    background-color: rgba(183, 253, 120, 0.6);
-}*/
+/*active doesn't work, let's see if it is a problem with the none-existing subpages*/
+a:active {
+    color: rgba(235, 11, 11, 0.6);
+}
 
 /*-------------------Hover.css */
 /* :hover style taken from tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
@@ -85,13 +86,6 @@ body {
     border-radius: 2px;
     border: 6px solid #2e2929;
 }
-
-/*
-.background-carousel {
-    background-color:black;
-    padding: 40px 0;
-}*/
-
 
 /*------------------- Footer */
 footer {
@@ -120,7 +114,7 @@ footer {
     font-size: 35px;
     line-height: 7px;
     text-align: center;
-    color: rgba(50, 82, 22, 0.4);
+    color: rgba(233, 250, 237, 0.9);
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -128,7 +122,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    background: rgba(18, 16, 16, 0.5);
+    background-color: rgba(50, 82, 22, 0.8);
 }
 
 
@@ -140,16 +134,17 @@ footer {
     }
 
     .main-heading {
-        font-size: 4em;
+        font-size: 70px;
+        margin: 20px 15px 3px 20px;
+    }
+
+    .logo-heading {
+        margin: 0 15px 30px 15px;
     }
 
     .nav-menu {
         margin: 0 auto;
         margin-bottom: 50px;
-    }
-
-    footer {
-        margin-top: 50px;
     }
 
     .nav-menu li {
@@ -161,8 +156,10 @@ footer {
         height: 40px;
         margin: 0 auto;
         padding: 0 auto;
+    }
 
-
+    footer {
+        margin-top: 60px;
     }
 
     .nav-menu li a:hover {
@@ -175,7 +172,5 @@ footer {
 
         max-width: 90%;
         margin: 0 auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
     }
 }
