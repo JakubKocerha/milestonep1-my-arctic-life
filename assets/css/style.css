@@ -17,7 +17,7 @@ body {
 .main-header {
     margin: 0;
     padding: 0;
-    
+
 }
 
 .main-heading {
@@ -35,43 +35,54 @@ body {
 }
 
 .nav-menu {
+    margin: 0 50px 100px 50px;
+}
+
+
+
+.nav-menu li {
+    text-align: center;
     margin: 0 auto;
-    margin-bottom: 100px;
+    border-radius: 25px;
+    padding: 1px;
 }
 
 .nav-menu li a {
     color: #e9faed;
     background-color: rgba(0, 0, 0, 0.4);
-    width: 130px;
-    font-weight: 700;
+    width: 80%;
+    font-size: 15px;
+    font-weight: 600;
     border: 2px solid #2e2929;
     border-radius: 25px;
+    padding: 5px 2px;
+
+
+
 
 }
 
-.nav-menu li {
-    text-align: center;
-}
 
 /* :hover style taken from tutorials, before setting the same width of hover, the pseudoclass was rendering with nonstandard rendering customised with hover collections https://ianlunn.github.io/Hover/*/
 .nav-menu li a:hover {
     background-color: rgba(0, 0, 0, 0.1);
-    width: 140px;
+    width: 100%;
     border-radius: 25px;
-
-
 }
 
-/*active doesn't work, let's see if it is a problem with the none-existing subpages*/
-/*a:active {
+/*active doesn't work, let's see if it is a problem with the none-existing subpages
+.active:active {
     color: rgba(235, 11, 11, 0.6);
-}
-*/
+}*/
+
 
 /*-------------------Hover.css */
 /* :hover style taken from tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
 .hvr-radial-out:before {
     background-color: rgba(50, 82, 22, 0.6);
+    border-radius: 25px;
+    width: 100%;
+
 
 }
 
@@ -91,31 +102,70 @@ body {
 /*-------------------Reason Container*/
 .reasons {
     max-width: 90%;
-    min-height: 800px;
     margin: 0 auto;
 }
 
 .reason-container {
-    background-image: url("../images/why-container-background.jpg");
-    background-color: #000000;
-    background-position: top;
+   /* background-image: url("../images/why-container-background.jpg");*/
+   /* background-color: #000000;*/
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 auto;
-    min-height: 800px;
+    padding: 16px 32px;
+   /* border: 3px solid #e9faed;*/
+    border-radius: 2px;
+}
+
+.heading-container{
+    background-color: rgb(152, 0, 0, 0.4);
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.reason-heading {
+    color:rgba(233, 250, 237, 0.9);
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px 0;
+}
+/*-------------------Reason Container Cards*/
+
+
+.reason-container .card {
+    border: 2px solid #e9faed;
+}
+
+.reason-container .card-body {
+    text-align: center;
+}
+
+.reason-container .card-body p {
+    min-height: 150px;
+}
+
+.reason-container .card-body h5 {
+    min-height: 50px;
+}
+
+
+.card-margin {
+    padding: 16px;
 }
 
 .btn {
-    background-color:rgba(50, 82, 22, 0.7);
-    border: 3px solid;
-    border-color: #2e2929;
+    background-color: rgba(50, 82, 22, 0.7);
+    border: 1px solid #2e2929;
+    color: #e9faed;
 }
 
 .btn:hover {
-    background-color:  #2e2929;
-    border-color:rgba(50, 82, 22);
-    
+    background-color: #2e2929;
+    border-color: rgba(50, 82, 22);
+    color: #e9faed;
+
 }
+
+
 
 /*------------------- Footer */
 footer {
@@ -184,23 +234,38 @@ footer {
     .nav-menu li a {
         width: 80%;
         height: 40px;
-        margin: 0 auto;
-        padding: 0 auto;
+        padding-top: 5px;
+        
+        
+        
+    }
+
+    .nav-menu li a:hover {
+        width: 85%;
+        border-radius: 25px;
+    }
+
+    .reasons {
+        max-width: 100%;
     }
 
     footer {
         margin-top: 60px;
+        /* position: relative;*/
     }
 
-    .nav-menu li a:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-        width: 90%;
-        border-radius: 25px;
+    .back-to-top a {
+        color: white;
+        text-decoration: none;
+        float: right;
+        margin-bottom: 60px;
     }
+
 
     #carouselExampleControls {
 
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
     }
+
 }
