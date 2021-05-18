@@ -38,15 +38,15 @@
                 <div class="col-12">
                     <ul class="nav justify-content-center nav-menu">
                         <li class="col-12 col-sm-3 nav-item">
-                            <a class="nav-link hvr-radial-out" href="index.html">Home</a>
+                            <a class="active nav-link hvr-radial-out" href="index.html">Home</a>
                         </li>
-                        <li class="active col-12 col-sm-3 nav-item">
+                        <li class="col-12 col-sm-3 nav-item">
                             <a class="nav-link hvr-radial-out" href="why-arctic.html">Why Arctic?</a>
                         </li>
                         <li class="col-12 col-sm-3 nav-item">
                             <a class="nav-link hvr-radial-out" href="life.html">Life</a>
                         </li>
-                        <li class="col-12 col-sm-3 nav-item">
+                        <li class="active col-12 col-sm-3 nav-item">
                             <a class="nav-link hvr-radial-out" href="Join Me!.html">Join Me!</a>
                         </li>
 
@@ -56,58 +56,70 @@
         </div>
     </header>
 
-    <!-- Basic card code copied from bootstrap, styled personally-->
     <section class="container-fluid">
         <div class="row section-viewport">
             <div class="col-12 heading-container">
-                <h3 class="heading">Why living above the polar circle?</h3>
+                <h3 class="heading">Join me for an adventure!</h3>
             </div>
-            <div class="col-12 reasons-content-general">
+            <div class="col-12 joinme-content-general">
                 <div class="row">
-                    <div class="col-sm-6 col-lg-3 card-margin">
-                        <div class="card">
-                            <img src="assets/images/child-dream.jpg" class="card-img-top" alt="Dreaming small boy">
-                            <div class="card-body">
-                                <h5 class="card-title">Childhood Dream</h5>
-                                <p class="card-text">   
-                                   y device-two-factor-authentication to learn about two-factor authentication.
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                    <!--copied CI link for post method from Form Module to validate the functionality of the form-->
+                    <div class="col-12 form-conatiner">
+                        <h4><i>Win a trip!</i></h4>
+                        <h5>
+                            How to win?
+                        </h5>
+                        <p>
+                            Write a short letter about you, what you want to achieve and what you wish 
+                            to attain by joining this unusual journey.
+                        </p>
+                        <h5>
+                            What do you get?
+                        </h5>
+                        <p>
+                            You'll get a chance to spend 2 weeks in a remote wilderness in the Arctic 
+                            where I'll guide you how to fish, make fire without matches, perhaps meet a bear, 
+                            make a sauna with a tarp, and a lot of other cool stuff, including how to 
+                            survive in situations you don't normally expect and how to act that the 
+                            impact of our presence in the nature doesn't cause damage. Note that this 
+                            project is solely voluntary, and you pay all expenses necessary for your 
+                            travel, and you do it at your own risk.
+                        </p>
                     </div>
-                    <div class="col-sm-6 col-lg-3 card-margin">
-                        <div class="card">
-                            <img src="assets/images/out-of-city.jpg" class="card-img-top" alt="A man sitting by a lake">
-                            <div class="card-body">
-                                <h5 class="card-title">Out Of City</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 card-margin">
-                        <div class="card">
-                            <img src="assets/images/pristine-nature.jpg" class="card-img-top" alt="An arctic owl">
-                            <div class="card-body">
-                                <h5 class="card-title">Pristine Nature</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 card-margin">
-                        <div class="card">
-                            <img src="assets/images/adventure.jpg" class="card-img-top" alt="A man kayaking on a river">
-                            <div class="card-body">
-                                <h5 class="card-title">Adventure</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
+                    <div class="col-12">
+                        <form class="letter-form" method="post" action="https://formdump.codeinstitute.net/">
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Full Name:</label>
+                                    <input type="text" class="form-control" name="name" id="exampleFormControlInput1"
+                                        placeholder="your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email Address:</label>
+                                    <input type="email" class="form-control" name="email" id="exampleFormControlInput1"
+                                        placeholder="your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">How would you describe your experience with
+                                        outdoor
+                                        life?</label>
+                                    <select class="form-control" name="outdoor-experience" value="level-of-experience"
+                                        id="exampleFormControlSelect1">
+                                        <option>Never in a forest</option>
+                                        <option>Tried few short hiking trips</option>
+                                        <option>Going out every summer</option>
+                                        <option>Spending a lot of time out there</option>
+                                        <option>All my free time is outdoors</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Write your letter here:</label>
+                                    <textarea class="form-control" name="letter-text" id="exampleFormControlTextarea1"
+                                        rows="10"></textarea>
+                                </div>
+                                <div class="button-container">
+                                    <input class="btn form-button" type="submit" value="Send">
+                                </div>
+                        </form>
                     </div>
                 </div>
             </div>
