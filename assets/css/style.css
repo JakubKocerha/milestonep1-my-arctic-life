@@ -45,6 +45,7 @@ section .heading {
 .form-conatiner h5 {
     margin: 40px 0 20px 0;
 }
+
 .form-conatiner p {
     font-size: 15px;
     text-align: justify;
@@ -183,21 +184,65 @@ section .heading {
 
 /*-------------------Form*/
 .letter-form {
-    background-color:rgba(50, 82, 22, 0.5);
+    background-color: rgba(127, 167, 92, 0.5);
     margin: 60px 0;
     padding: 20px;
     border-radius: 2px;
 }
 
 .form-control {
-    background-color: rgba(211, 224, 197, 0.8);
-    
+    background-color: rgba(44, 66, 21, 0.8);
+    background-color: rgba(102, 218, 140, 0.9) !important;
 }
-        /*.focus pseudoclass found on https://stackoverflow.com/questions/42134731/css-change-button-style-after-click*/
-.form-control:focus {
-    background-color: rgba(211, 224, 197, 0.5) !important;
-    border: none !important;
+
+/*.focus pseudoclass found on https://stackoverflow.com/questions/42134731/css-change-button-style-after-click*/
+
+.form-control:active {
+    background-color: rgba(241, 33, 33, 0.9) !important;
+    box-shadow: none;
+    border: 1px solid orangered;
+    background: transparent;
 }
+
+
+.form-control:hover {
+    background-color: rgba(241, 33, 33, 0.9) !important;
+    box-shadow: none;
+    border: 1px solid orangered;
+    background: transparent;
+}
+
+.form-control option:hover {
+    background-color: rgba(153, 45, 45, 0.9) !important;
+    box-shadow: none;
+    border: 1px solid orangered;
+    background: transparent;
+}
+
+.form-control option:active {
+    background-color: rgba(241, 33, 33, 0.9) !important;
+    box-shadow: none;
+    border: 1px solid orangered;
+    background: transparent;
+}
+
+.form-control option:checked {
+    background-color: rgba(102, 218, 140, 0.3) !important;
+    box-shadow: none;
+    border: 1px solid orangered;
+    background: transparent;
+}
+
+
+select:active {
+    background-color: rgb(219, 29, 54) important!;
+    *width: 350px;
+    *background: yeallow;
+    -webkit-appearance: none;
+}
+
+/*    -webkit-tap-highlight-color: #884c4c00; */
+
 
 
 /*-------------------Buttons*/
@@ -213,13 +258,13 @@ section .heading {
 }
 
 /* .focus pseudoclass found on https://stackoverflow.com/questions/42134731/css-change-button-style-after-click*/
-.btn:focus {     
-    background-color:rgb(152, 0, 0, 0.4);
+.btn:focus {
+    background-color: rgb(152, 0, 0, 0.4);
     font-weight: 700;
     color: black;
 }
 
-.button-container {       
+.button-container {
     text-align: center;
 }
 
@@ -284,10 +329,10 @@ footer {
         margin: 20px 0;
     }
 
-    section .heading{
+    section .heading {
         margin-left: 15px;
         margin-right: 15px;
-    
+
     }
 
     .form-conatiner h5 {
@@ -316,11 +361,13 @@ footer {
         width: 85%;
         border-radius: 25px;
     }
+
     .section-viewport {
         max-width: 100%;
     }
+
     .reasons-content-general {
-        background:none;
+        background: none;
         border: none;
         padding-left: 0;
         padding-right: 0;
