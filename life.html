@@ -16,14 +16,14 @@
         type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
-   <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>My Arctic Life</title>
 </head>
 
 <body>
     <!--header coding copied and customised from bootstrap-->
     <header>
-        <div class="container-fluid main-header">
+        <div id="top" class="container-fluid main-header">
             <div class="row no-gutters">
                 <div class="col-12">
                     <h1 class="main-heading">My Arctic Life</h1>
@@ -40,7 +40,7 @@
                         <li class="col-12 col-sm-3 nav-item">
                             <a class="nav-link hvr-radial-out" href="index.html">Home</a>
                         </li>
-                        <li class="active col-12 col-sm-3 nav-item">
+                        <li class="col-12 col-sm-3 nav-item">
                             <a class="nav-link hvr-radial-out" href="why-arctic.html">Why Arctic?</a>
                         </li>
                         <li class="col-12 col-sm-3 nav-item">
@@ -61,12 +61,14 @@
         <div class="row section-viewport">
             <div class="col-12 heading-container">
                 <div class="row life-image heading">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 image-container">
                         <img src="assets/images/jakub-boat.jpg" alt="A man with a beard">
                     </div>
                     <div class="col-sm-9">
                         <p>
-                            Life and people aren't easy up here. However, a vast area with lakes, mountains, and nobody around gives freedom of choice. It gives a range of possibilities and contrasts very rare and different to what and where most of us live in.
+                            Life and people aren't easy up here. However, a vast area with lakes, mountains, and nobody
+                            around gives freedom of choice. It gives a range of possibilities and contrasts very rare
+                            and different to what and where most of us live in.
                         </p>
                     </div>
                 </div>
@@ -78,10 +80,11 @@
                             <img src="assets/images/child-dream.jpg" class="card-img-top" alt="Dreaming small boy">
                             <div class="card-body">
                                 <h5 class="card-title">Childhood Dream</h5>
-                                <p class="card-text">   
-                                   y device-two-factor-authentication to learn about two-factor authentication.
+                                <p class="card-text">
+                                    y device-two-factor-authentication to learn about two-factor authentication.
                                 </p>
-                                <a href="https://www.englishbaby.com/vocab/word/12286/childhood-dream" class="btn btn-primary">Go somewhere</a>
+                                <a href="https://www.englishbaby.com/vocab/word/12286/childhood-dream"
+                                    class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -126,8 +129,8 @@
     <footer class="container-fluid">
         <div class=" row no-gutters">
             <div class="col d-sm-none back-to-top">
-                <a href="#" class="btn">
-                    <span>>Back to top</span>
+                <a href="#top" class="btn">
+                    <span>Back to top</span>
                 </a>
             </div>
         </div>
@@ -136,7 +139,7 @@
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a href="https://www.youtube.com/" target="_blank">
-                            <i class="fas fa-sort-up"></i>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">Youtube</span>
                         </a>
                     </li>
@@ -155,9 +158,7 @@
                 </ul>
             </div>
         </div>
-
-
-    </footer>
+     </footer>
 
 
 
@@ -175,10 +176,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
