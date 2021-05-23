@@ -52,9 +52,8 @@ section .heading {
 
 /*-------------------Header*/
 
-#active:focus {
-    background: white;
-    border-bottom: 4px solid white;
+#active:active {
+    color: rgb(26, 26, 202, 0.9);
 }
 
 .main-header {
@@ -105,12 +104,11 @@ section .heading {
 
 /*-------------------Hover.css */
 /* :hover style taken from tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
+
 .hvr-radial-out:before {
     background-color: rgba(50, 82, 22, 0.6);
     border-radius: 25px;
     width: 100%;
-
-
 }
 
 /*-------------------Main section - general*/
@@ -158,6 +156,9 @@ section .heading {
 }
 
 .card-margin .card-body {
+    /* display and flex direction in combination with mt-auto for button in html - solution for positionin of button to the bottom of the body container from https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card */
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color:rgba(46, 41, 41, 1);
     background:rgba(0, 0, 0, 0.6);
@@ -165,7 +166,9 @@ section .heading {
 }
 
 .card-margin .card-body p {
-    min-height: 150px;
+    min-height: 200px;
+    text-align: justify;
+    font-size: 14px;
 }
 
 .card-margin .card-body h5 {
@@ -174,13 +177,13 @@ section .heading {
     text-transform: uppercase;
 }
 
-
-.card-margin {
-    padding: 16px;
+.card-margin .card{
+    margin-bottom: 25px;
 }
 
-/*-------------------Lifa Container*/
 
+
+/*-------------------Life Container*/
 
 .life-image{
     margin: 0 auto;
@@ -197,18 +200,44 @@ section .heading {
 }
 
 .life-image p{
-    
     text-align: left;
-    text-align: center;
-    margin: 0 auto;
-    padding: 15px;
-    
-    
-    
+    padding: 15px;  
 }
 
 .image-container {
     padding: 15px;
+}
+
+.winter-container{
+    background-image: url("../images/winter-container.jpg");
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.winter-container h4 {
+    color:rgba(233, 250, 237, 0.7);
+    background-color:rgba(58, 84, 199, 0.6);
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 40px;
+}
+
+.summer-container h4{
+    color:rgba(233, 250, 237, 0.7);
+    background-color:rgba(187, 37, 37, 0.4);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.life-content-general {
+    margin-top: -20px;
 }
 /*-------------------Join-me Container*/
 .joinme-content-general {
@@ -440,7 +469,7 @@ footer {
         max-width: 100%;
     }
 
-    .reasons-content-general {
+    .media-style {
         background: none;
         border: none;
         padding-left: 0;
