@@ -52,9 +52,7 @@ section .heading {
 
 /*-------------------Header*/
 
-#active:active {
-    color: rgb(26, 26, 202, 0.9);
-}
+
 
 .main-header {
     margin: 0;
@@ -72,7 +70,7 @@ section .heading {
     text-align: center;
     margin: 0 auto;
     border-radius: 25px;
-    padding: 1px;
+    padding: 2px;
 }
 
 .nav-menu li a {
@@ -95,7 +93,9 @@ section .heading {
     border-radius: 25px;
 }
 
-
+.active:active {
+    background-color: rgba(32, 177, 27, 0.9);
+}
 /*active doesn't work, let's see if it is a problem with the none-existing subpages
 .active:active {
     color: rgba(235, 11, 11, 0.6);
@@ -111,6 +111,9 @@ section .heading {
     width: 100%;
 }
 
+.active:active {
+    color:rgba(126, 139, 197, 0.836);
+}
 /*-------------------Main section - general*/
 .heading-container {
     background-color: rgb(152, 0, 0, 0.4);
@@ -185,10 +188,6 @@ section .heading {
 
 /*-------------------Life Container*/
 
-.life-image{
-    margin: 0 auto;
-
-}
 
 .life-image img{
     width: 100%;
@@ -201,12 +200,14 @@ section .heading {
 
 .life-image p{
     text-align: left;
-    padding: 15px;  
+    padding: 15px;
+    margin-bottom: 0;  
 }
 
 .image-container {
-    padding: 15px;
+    padding: 15px;   
 }
+
 
 .winter-container{
     background-image: url("../images/winter-container.jpg");
@@ -215,30 +216,42 @@ section .heading {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0;
 }
 
 .winter-container h4 {
-    color:rgba(233, 250, 237, 0.7);
-    background-color:rgba(58, 84, 199, 0.6);
+    color:rgba(233, 250, 237, 0.9);
+    background-color:rgba(137, 145, 180, 0.6);
     text-transform: uppercase;
-    margin: 0 auto;
     text-align: center;
     padding: 30px 0;
     line-height: 40px;
 }
 
-.summer-container h4{
-    color:rgba(233, 250, 237, 0.7);
-    background-color:rgba(187, 37, 37, 0.4);
-    text-transform: uppercase;
-    text-align: center;
+.summer-container{
+    background-image: url("../images/summer-container.jpg");
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
-.life-content-general {
-    margin-top: -20px;
+.summer-container h4 {
+    color:rgba(233, 250, 237, 0.9);
+    background-color:rgba(105, 75, 75, 0.6);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+    line-height: 40px;
+    
 }
+
+
 /*-------------------Join-me Container*/
 .joinme-content-general {
     background-image: url("../images/join-me-container-background.jpg");
@@ -291,7 +304,7 @@ section .heading {
     text-align: justify;
 }
 
-
+/*
 .form-control:active {
     background-color: rgba(102, 218, 140, 1) !important;
     background: transparent;
@@ -323,7 +336,7 @@ section .heading {
 .form-control option:active {
     background-color: rgba(102, 218, 140, 1) !important;
 }    
-
+*/
 /*details in readme.md under point 9 in section Debugging; disabling hover effect on label copied from https://stackoverflow.com/questions/26754497/css-disable-hover-effect*/
 .nohover {
     pointer-events: none;
