@@ -191,10 +191,11 @@ section .heading {
     padding: 0;
 }
 
-.life-image h4{
+.life-image h6{
     text-align: justify;
-    padding: 15px;
-    margin-bottom: 0;  
+    padding: 25px 15px;
+    margin-bottom: 0; 
+
 }
 
 .image-container {
