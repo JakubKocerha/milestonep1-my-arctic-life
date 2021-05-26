@@ -86,6 +86,7 @@ section .heading {
     
 }
 
+/*active class debugging solved with help of Fatima tutor*/
 .active{
     background-color: rgba(50, 82, 22, 0.5);
 }
@@ -130,7 +131,7 @@ section .heading {
     border: 6px solid #2e2929;
 }
 
-/*-------------------Reason Container Content*/
+/*-------------------Why-Arctic Container Content*/
 
 
 .reasons-content-general {
@@ -175,7 +176,9 @@ section .heading {
     margin-bottom: 25px;
 }
 
-
+.why-margin {
+    margin-top: 25px;
+}
 
 /*-------------------Life Container*/
 .life-image img{
@@ -187,8 +190,8 @@ section .heading {
     padding: 0;
 }
 
-.life-image p{
-    text-align: left;
+.life-image h4{
+    text-align: justify;
     padding: 15px;
     margin-bottom: 0;  
 }
@@ -445,13 +448,18 @@ footer {
         margin-bottom: 0;
         max-width: 100%;
     }
+
+    .summer-container h4, .winter-container h4{
+        font-size: 30px;
+    }
+
     .heading img{
         width: 100%;
         margin: 0 auto;
         margin-top: 20px;
         margin-bottom: 20px;   
     }
-    .heading p{
+    .heading h4{
         width: 100%;
         margin: 20px 0px;
         text-align: justify;
@@ -505,9 +513,19 @@ footer {
     }
 
     .card-body .btn{
+        text-align: center;
         margin-left: 20%;
         margin-right: 20%;
-        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .card-margin .card-body h5 {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    .card-margin .card-body p {
+        font-size: 18px;
     }
 
     .joinme-content-general {
@@ -537,7 +555,15 @@ footer {
 
 @media only screen and (max-width: 991px) {
     .card-margin .card-body p {
-        min-height: 230px;
+        min-height: 250px;
+    }
+
+    .card-margin .card-body h5 {
+        margin-top: 20px;
+    }
+
+    .card-body .btn{
+        margin-bottom: 20px;
     }
 }
 
@@ -546,6 +572,17 @@ footer {
         min-height: 315px;
     }
 
+    .card-margin .card-body h5 {
+        margin-top: 20px;
+    }
+
+    .card-body .btn{
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -553,4 +590,10 @@ footer {
         min-height: 315px;
     }
 
+    .card-margin .card-body h5 {
+        margin-top: 20px;
+    }
+    .card-body .btn{
+        margin-bottom: 20px;
+    }
 }
