@@ -191,10 +191,12 @@ section .heading {
     padding: 0;
 }
 
-.life-image h3{
+.life-image p{
     text-align: justify;
     padding: 25px 15px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 500;
 
 }
 
@@ -278,25 +280,22 @@ section .heading {
     box-shadow: none !important;
 }
 
+.placeholder::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 /*.focus pseudoclass found on https://stackoverflow.com/questions/42134731/css-change-button-style-after-click*/
-#exampleFormControlInput1, #exampleFormControlTextarea1 {
+#exampleFormControlInput1,
+#exampleFormControlInput2,
+#exampleFormControlTextarea1 {
     color: #e9faed;
 }
 
-#exampleFormControlInput1::placeholder {
-    color: rgba(233, 250, 237, 0.7);;
-}
-
-#mainselection {
-    color: #e9faed;
+.placeholder::placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 
-
-#mainselection select:active {
-    background-color: rgba(102, 218, 140, 1) !important;
-    
-}
 
 .form-conatiner p {
     font-size: 15px;
@@ -330,7 +329,19 @@ section .heading {
 }
 .form-control option:active {
     background-color: rgba(102, 218, 140, 1) !important;
-}    
+}  
+
+#exampleFormControlSelect1{
+    color: #e9faed;
+}
+
+#exampleFormControlSelect1:active {
+    background-color: rgba(102, 218, 140, 1) !important;
+}
+
+/*select:active {
+    background-color: rgba(102, 218, 140, 1) !important;   
+}*/
 
 /*details in readme.md under point 9 in section Debugging; disabling hover effect on label copied from https://stackoverflow.com/questions/26754497/css-disable-hover-effect*/
 .nohover {
