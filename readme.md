@@ -59,7 +59,7 @@ This project has two basic aspects:
 ![Join-me](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/join-me-to-arctic.jpg)
 
 
-### Features to implement
+### Features To Implement
 
 * More multimedia content(photos, videos, audio) from life and environment of presented guide.
 * Guide's stories about critical moments and difficult conditions in the mountains(weather changes, injuries, broken equipment, etc.) and their solutions.
@@ -67,13 +67,15 @@ This project has two basic aspects:
 
 
 ## Testing
+
 ### Visual testing
+
 * Google Devtools and its Toggle device toolbar with (responsive rule and grid blocks)
 * Github deployed [My Arctic Life page](https://jakubkocerha.github.io/milestonep1-my-arctic-life/) on smartphone Samsung Galaxy Xcover Pro, laptop HP ProBook x360 11 G3 EE and Dell screen res. 1920 x 1080px.
 * Browsers used for testing - Google Chrome, Microsoft Edge.
 
 ### Form post/action link testing
-* tested via [link](https://formdump.codeinstitute.net/) found in CI Software develpment HTML tutorial.
+* tested via [link](https://formdump.codeinstitute.net/) taken from CI Software develpment HTML tutorial.
 
 
 ### Validator testing
@@ -102,7 +104,15 @@ This project has two basic aspects:
     2.  Validation - the direct input of [style.css](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/assets/css/style.css) with [(Jigsaw) validator direct input](https://jigsaw.w3.org/css-validator/#validate_by_input)   
         * No error found
 
-### Responsive design:
+### Google Developer Tools Lighthouse.
+- Stable rating
+    * 98% Accessibility
+    * 100% SEO
+- Fluctuating rating
+    * 80% Performance
+    * 85% Best practices
+
+### Responsive Design:
 * Bootstrap grid applied in HTML markup
     * Extra small
     * Small
@@ -124,9 +134,9 @@ This project has two basic aspects:
 4. [Wireframe Join-me](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page4-project1joinme.png)
 
 ### Debugging
-1. Use of "pointer-events: none;" targeting .nohover class
-    - Issue: when hovering over the label text "Email Address:"         :hover rule got triggered in the input for the label "Full Name" above. 
-    The rule pointer-events: none; for Label text solved the problem.
+1. Use of _"pointer-events: none;"_ targeting _.nohover_ class
+    - Issue: when hovering over the label item with text "Email Address:", :hover rule got triggered above in the input for the label "Full Name:".
+    The rule _"pointer-events: none;"_ solved the problem.
 2. !important
     - Issue: default colors and box-shadows in buttons, inputs, dropdown menu, text-area.
     Overriden with !important.
@@ -141,14 +151,14 @@ This project has two basic aspects:
   - From the source section drop-down menu, select the _Master Branch_ and press _Save_. 
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon including a link to the site to indicate the successful deployment. 
 
-The live link can be found here - (https://jakubkocerha.github.io/milestonep1-my-arctic-life/)
+The live link can be found here - https://jakubkocerha.github.io/milestonep1-my-arctic-life/
 
 ## Credits
 ### Content
 #### Fonts
 [Google Fonts](https://fonts.google.com/)
 #### HTML codes adopted from other sources:
-[Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/})
+[Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
 - Grid system
 - Nav links
 - Carousel
@@ -158,18 +168,18 @@ The live link can be found here - (https://jakubkocerha.github.io/milestonep1-my
 
 #### Pseudo-class effects:
 - Nav links 
-    - HTML code taken from Code Institute tutorial [code](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/f99dac3afcfe4b2caf8d576273aea3e6/)
+    - HTML code taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/f99dac3afcfe4b2caf8d576273aea3e6/)
     - Overriding of Bootstrap, implementing and correct targeting of :active styling for Navlinks with help of Code Institute tutor Fatima Aminu
     
 - Carousel
-    - external Javascript needed copied from [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/) 
+    - external Javascript links copied from [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/) 
 
 - Footer
-    - HTML code and CSS styling taken from Code Institute tutorial [code](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/)
+    - HTML code and CSS styling taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/)
     - Footer icons taken from [Font Awsome](https://fontawesome.com/)
 
 - Form, Buttons
-    - styling and usage taken from [Stackoverflow](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click), [W3S](https://www.w3schools.com/css/css_pseudo_classes.asp) and [:focus](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click)
+    - styling and usage taken from [Stackoverflow](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click), [W3S](https://www.w3schools.com/css/css_pseudo_classes.asp) and [Stackoverflow :focus class](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click)
 
 - Form label 
     - disabling of hover effect taken from [Stackoverflow](https://stackoverflow.com/questions/26754497/css-disable-hover-effect)
@@ -181,7 +191,7 @@ The live link can be found here - (https://jakubkocerha.github.io/milestonep1-my
     - overriding colors and bootstrap box-shadow with help of [Developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
 - Meta links
-    - meta and stylesheets copied from Code Institute tutorial [code](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/59591be08b13436ebe782f57967be07a/)
+    - meta and stylesheets copied from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/59591be08b13436ebe782f57967be07a/)
 
 - Button
     - positioning of card buttons implemented with help of [Stackoverflow](https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card)
@@ -194,10 +204,10 @@ The live link can be found here - (https://jakubkocerha.github.io/milestonep1-my
 
 #### External links
 ##### Find out more! buttons
-- [Wikipedia](https://en.wikipedia.org/wiki/Ice_fishing)
+- [en.wikipedia.org](https://en.wikipedia.org/wiki/Ice_fishing)
 - [sightsbetterseen.com](https://sightsbetterseen.com/abisko-sweden/)
 - [www.deviantart.com](https://www.deviantart.com/tag/abisko)
-- [Wikipedia](https://en.wikipedia.org/wiki/Barbecue_grill)
+- [en.wikipedia.org](https://en.wikipedia.org/wiki/Barbecue_grill)
 - [www.swedenfishing.com](http://www.swedenfishing.com/en/articles/species_and_fishing_north_sweden)
 - [visitsweden.com](https://visitsweden.com/what-to-do/nature-outdoors/hiking/top-hiking-routes-sweden/)
 - [naturetravels.wordpress.com](https://naturetravels.wordpress.com/2007/11/20/mosquitoes-in-sweden-fact-and-fiction/)
@@ -214,6 +224,6 @@ The live link can be found here - (https://jakubkocerha.github.io/milestonep1-my
 - Photo for the card _Childhood dream_ downloaded and edited from Open source site pexels.com [Author Stein Egil Liland](https://www.pexels.com/photo/aurora-borealis-1933239/)
 - Photo for the card _Adventure_ downloaded and edited from Open source site pexels.com [Author Spencer Gurley](https://www.pexels.com/photo/photo-of-person-on-kayak-1497585/)
 - Photo for the card _Never forget_ downloaded and edited from Open source site pexels.com [Author Pavel Hajek](https://www.pexels.com/photo/a-mosquito-on-green-leaf-in-close-up-photography-4056767/)
-- Photo for the card Form container background downloaded and edited from Open source site pexels.com [Author Gantas Vaičiulėnas](https://www.pexels.com/photo/hands-over-a-bonfire-4323761/)
+- Photo for the Form container background downloaded and edited from Open source site pexels.com [Author Gantas Vaičiulėnas](https://www.pexels.com/photo/hands-over-a-bonfire-4323761/)
 
 
