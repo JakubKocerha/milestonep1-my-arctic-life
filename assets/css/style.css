@@ -4,6 +4,7 @@
 
 
 /*-------------------Colors*/
+
 body {
     background-image: url("../images/background-main.jpg");
     background-color: #000000;
@@ -13,7 +14,9 @@ body {
     height: 100%;
 }
 
-/*-------------------Headings*/
+
+/*-------------------Major Headings*/
+
 .main-heading {
     font-family: 'Mountains of Christmas', sans-serif;
     font-size: 80px;
@@ -29,7 +32,6 @@ body {
 }
 
 section .heading {
-
     color: rgba(233, 250, 237, 0.9);
     text-align: center;
     vertical-align: middle;
@@ -48,23 +50,16 @@ section .heading {
 }
 
 
-
-
 /*-------------------Header*/
-
-
 
 .main-header {
     margin: 0;
     padding: 0;
-
 }
 
 .nav-menu {
     margin: 0 50px 100px 50px;
 }
-
-
 
 .nav-menu li {
     text-align: center;
@@ -83,29 +78,25 @@ section .heading {
     border: 2px solid #2e2929;
     border-radius: 25px;
     padding: 5px 2px;
-    
 }
-
-/*active class debugging solved with help of Fatima tutor*/
-.active{
-    background-color: rgba(50, 82, 22, 0.5);
-}
-
-/* :hover style taken from tutorials, before setting the same width of hover, the pseudoclass was rendering with nonstandard rendering customised with hover collections https://ianlunn.github.io/Hover/*/
-
 
 
 /*-------------------Hover.css */
-/* :hover style taken from tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
+
+/* :hover style taken from Code institute tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
+/* .active for nav links debugging solved with help of Fatima Aminu tutor*/
+.active {
+    background-color: rgba(50, 82, 22, 0.5);
+}
 
 .hvr-radial-out:before {
     background-color: rgba(50, 82, 22, 0.6);
-    border-radius: 25px;
-    
-    
+    border-radius: 25px;    
 }
 
+
 /*-------------------Main section - general*/
+
 .heading-container {
     background-color: rgb(152, 0, 0, 0.4);
     border: 3px solid rgb(152, 0, 0, 0.01);
@@ -116,23 +107,22 @@ section .heading {
 .section-viewport {
     max-width: 90%;
     margin: 0 auto;
-
 }
 
 
 /*-------------------Carousel*/
 
-/*adjusting the size, code advise on https://forum.bootstrapstudio.io/*/
+/*fixed width of carousel on the page, code advise on https://forum.bootstrapstudio.io/*/
 #carouselExampleControls {
     width: 750px;
-    max-width: 80%;
     margin: 0 auto;
     border-radius: 2px;
     border: 6px solid #2e2929;
 }
 
-/*-------------------Why-Arctic Container Content*/
 
+
+/*-------------------Why-Arctic Container Content*/
 
 .reasons-content-general {
     background-image: url("../images/why-container-background.jpg");
@@ -145,12 +135,12 @@ section .heading {
     border-radius: 2px;
 }
 
-.card-margin .card{
+.card-margin .card {
     border: 2px solid #e9faed;
 }
 
 .card-margin .card-body {
-    /* display and flex direction in combination with mt-auto for button in html - solution for positionin of button to the bottom of the body container from https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card */
+    /* display: and flex-direction: in combination with mt-auto for button in html - solution for positionin of button to the bottom of the body container from https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -178,11 +168,12 @@ section .heading {
 
 .why-margin {
     margin-top: 25px;
-
 }
 
+
 /*-------------------Life Container*/
-.life-image img{
+
+.life-image img {
     width: 100%;
     float: left;
     border: 2px solid #e9faed;
@@ -191,13 +182,10 @@ section .heading {
     padding: 0;
 }
 
-.life-image p{
+.life-heading h3 {
     text-align: justify;
     padding: 25px 15px;
     margin-bottom: 0;
-    font-size: 25px;
-    font-weight: 500;
-
 }
 
 .image-container {
@@ -208,7 +196,7 @@ section .heading {
     margin-bottom: 40px;
 }
 
-.winter-container{
+.winter-container {
     background-image: url("../images/winter-container.jpg");
     background-color: #000000;
     background-position: center;
@@ -230,7 +218,7 @@ section .heading {
     line-height: 40px;
 }
 
-.summer-container{
+.summer-container {
     background-image: url("../images/summer-container.jpg");
     background-color: #000000;
     background-position: center;
@@ -254,6 +242,7 @@ section .heading {
 
 
 /*-------------------Join-me Container*/
+
 .joinme-content-general {
     background-image: url("../images/join-me-container-background.jpg");
     background-color: #ffffff;
@@ -266,15 +255,18 @@ section .heading {
     color: #e9faed;
 }
 
+
 /*-------------------Form*/
+
 .letter-form {
     background-color: rgba(77, 165, 0, 0.3);
     margin: 60px 0;
     padding: 20px;
     border-radius: 2px;
 }
+
 /* use of !important for overriding colors and bootstrap box-shadow; inspired by https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity*/
-.form-control{
+.form-control {
     background-color: rgba(77, 165, 0, 0.3) !important;
     background: transparent;
     box-shadow: none !important;
@@ -295,43 +287,45 @@ section .heading {
     color: rgba(255, 255, 255, 0.5);
 }
 
-
-
 .form-conatiner p {
     font-size: 15px;
     text-align: justify;
 }
-
 
 .form-control:active {
     background-color: rgba(102, 218, 140, 1) !important;
     background: transparent;
     border: 2px solid rgb(46,41,41) !important;
 }
+
 .form-control:hover {
     background-color: rgba(34, 161, 76, 0.4) !important;
     border: 2px solid rgb(46,41,41) !important;
     background: transparent;
 }
+
 .form-control:focus {
     box-shadow: none !important;
     border: 2px solid rgb(46,41,41) !important;
 }
+
 .form-control option:checked {
     background-color: rgba(102, 218, 140, 0.6) !important;
     border: 2px solid rgb(46,41,41) !important;
     background: transparent;
 }
+
 .form-control option:focus {
     background-color: rgba(102, 218, 140, 0.6) !important;
     border: 2px solid rgb(46,41,41) !important;
     background: transparent;
 }
+
 .form-control option:active {
     background-color: rgba(102, 218, 140, 1) !important;
 }  
 
-#exampleFormControlSelect1{
+#exampleFormControlSelect1 {
     color: #e9faed;
 }
 
@@ -339,16 +333,14 @@ section .heading {
     background-color: rgba(102, 218, 140, 1) !important;
 }
 
-/*select:active {
-    background-color: rgba(102, 218, 140, 1) !important;   
-}*/
-
-/*details in readme.md under point 9 in section Debugging; disabling hover effect on label copied from https://stackoverflow.com/questions/26754497/css-disable-hover-effect*/
+/*disabling hover effect of form label copied from https://stackoverflow.com/questions/26754497/css-disable-hover-effect*/
 .nohover {
     pointer-events: none;
 }
 
+
 /*-------------------Buttons*/
+
 .btn {
     background-color: rgba(50, 82, 22, 0.7);
     border: 1px solid #2e2929;
@@ -381,6 +373,7 @@ section .heading {
 
 
 /*------------------- Footer */
+
 footer {
     height: 100px;
     margin-top: 100px;
@@ -391,14 +384,12 @@ footer {
     padding: 0;
 }
 
-
 .social-links {
     text-align: center
 }
 
-
+/* .social links styling taken from Code Institute tutorial https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/*/
 .social-links li a i {
-
     width: 55px;
     height: 55px;
     padding: 25px 0;
@@ -425,6 +416,8 @@ footer {
     margin-right: 10px;
     margin-top: 20px;
 }
+
+
 /*-------------------Media Queries */
 
 @media only screen and (max-width: 575px) {
@@ -469,23 +462,23 @@ footer {
         max-width: 100%;
     }
 
-    .summer-container h4, .winter-container h4{
+    .summer-container h4, .winter-container h4 {
         font-size: 30px;
     }
 
-    .heading img{
+    .heading img {
         width: 100%;
         margin: 0 auto;
         margin-top: 20px;
         margin-bottom: 20px;   
     }
-    .heading h4{
+
+    .heading h4 {
         width: 100%;
         margin: 20px 0px;
         text-align: justify;
     }
     
-
     .form-conatiner h5 {
         text-align: center;
     }
@@ -545,7 +538,7 @@ footer {
         border-radius: 0;
     }
 
-    .card-body .btn{
+    .card-body .btn {
         text-align: center;
         margin-left: 20%;
         margin-right: 20%;
@@ -568,7 +561,6 @@ footer {
 
     footer {
         margin-top: 60px;
-        /* position: relative;*/
     }
 
     .copyright {
@@ -586,12 +578,13 @@ footer {
     }
 
     #carouselExampleControls {
-
         max-width: 100%;
         margin: 0 auto;
     }
 
 }
+
+
 @media only screen and (min-width: 576px) {
     .card-margin .card-body p {
         min-height: 230px;
@@ -603,10 +596,11 @@ footer {
         padding-top: 20px;
     }
 
-    .card-body .btn{
+    .card-body .btn {
         margin-bottom: 20px;
     }
 }
+
 
 @media only screen and (min-width: 768px) {
    .card-margin .card-body p {
@@ -623,6 +617,7 @@ footer {
     }
 }
 
+
 @media only screen and (min-width: 992px) {
     .card-margin .card-body p {
         min-height: 275px;
@@ -633,10 +628,11 @@ footer {
         padding-top: 20px;
     }
 
-    .card-body .btn{
+    .card-body .btn {
         margin-bottom: 20px;
     }
 }
+
 
 @media only screen and (min-width: 1200px) {
     .card-margin .card-body p {
@@ -648,7 +644,7 @@ footer {
         padding-top: 20px;
     }
 
-    .card-body .btn{
+    .card-body .btn {
         margin-bottom: 20px;
     }
 }
