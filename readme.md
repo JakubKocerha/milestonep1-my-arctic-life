@@ -65,6 +65,15 @@ This project has two basic aspects:
 * Guide's stories about critical moments and difficult conditions in the mountains(weather changes, injuries, broken equipment, etc.) and their solutions.
 * Real action="#" link for collecting the posted data via form in join-me.html
 
+## Main technologies used
+* HTML5
+* CSS3
+* [Bootstrap 4.2.1](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
+* [Github](https://github.com/)
+* [Gitpod](https://www.gitpod.io/)
+* [Pixlr](https://pixlr.com/)
+* [Balsamiq](https://balsamiq.com/)
+
 
 ## Testing
 
@@ -92,12 +101,12 @@ This project has two basic aspects:
         * Two stray Div end tags in markdown reported on line 225 and 226. Both deleted.
 
     4. [join-me.html W3C validator](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Fjoin-me.html)
-        * Error 1 - __duplicate input ID__ - caused by incorrect customizing Bootstrap form inputs markup. The second input ID and related label atribute changed from exampleFormControlInput1 into exampleFormControlInput2 in . New ID was added to style.css for the rules styling the color of the text. The color of the placeholder text in the input fields was targeted with a new class .placeholder and styled in style.css.
+        * Error 1 - __duplicate input ID__ - caused by incorrect modifying of Bootstrap form input markup. The second input ID and related label attribute changed from exampleFormControlInput1 into exampleFormControlInput2 in . New ID was added to style.css for the rules styling the color of the text. The color of the placeholder text in the input fields was targeted with a new class .placeholder and styled in style.css.
         * Error 2 - __attribute value not allowed on element select at this point__ - caused inattentively and was deleted. The markup already contained attribute _name_ with _value_ **outdoor-experience** which will be used for addressing the posted value of a selected option.
 
 - CSS [W3C validator](https://jigsaw.w3.org/css-validator/)
     1. Validation of the site URI deployed on Github [My Arctic Life](https://jakubkocerha.github.io/milestonep1-my-arctic-life/)
-        - 2 Errors related to Bootstrap libraries [(Jigsaw) validator URI](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+        - 2 unsolved Errors related to Bootstrap libraries [(Jigsaw) validator URI](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
            - Property _text-decoration-skip-ink_ doesn't exist : _none_
            - Property _backdrop-filter_ doesn't exist : _blur(10px)_
 
@@ -123,7 +132,11 @@ This project has two basic aspects:
     * The rest of the queries is focused on Bootstrap card bodies and their resizing to fit the text and stay leveled while changing the the resolution of the screen. None of the cards gets unevenly stretched beyond the rest of the cards while changing the resolution of the site with current content. 
     Cards sequenced to block for _small_ devices, in sequence of two cards in a row for _small_ and _medium_ devices and in sequence of four cards for _large_ and bigger devices
     * The site is mainly designed for smartphones, tablets and laptops and the content might appear visualy small on screens with very high resolution. 
-    * Very low resolution causes the float of the content to the left and creating a gap on the right. It is supposed to be a common issue. 
+    
+### Bugs
+* Commonly known bug with very low resolution, ca <200px causes the float of the content to the left and creates a gap on the right side of the screen.
+* Homepage features on iPad Pro don't cover the whole height of the screen.
+
     
 ### Wireframes
 - Links to wireframes bellow show the basic structure of each page on mobile device, tablet and laptop.
@@ -145,18 +158,30 @@ This project has two basic aspects:
     Solved with default editing of images into the same size. 
 
 ## Deployment
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the _Settings_ tab
-  - In _Setting_ navigate in _Pages_
-  - From the source section drop-down menu, select the _Master Branch_ and press _Save_. 
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon including a link to the site to indicate the successful deployment. 
+### GitHub Pages
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JakubKocerha/milestonep1-my-arctic-life)
+    2. At the top of the Repository (not top of page), navigate to the _Settings_ button.
+    3. Scroll down the Settings page until you locate the _GitHub Pages_ Section.
+    4. Under _Source_, click the dropdown called _None_ and select _Master Branch_ and press _Save_. 
+    5. Once the _Master branch_ has been selected, the page will be automatically refreshed with a detailed ribbon including a link to the site to indicate the successful deployment. 
 
 The live link can be found here - https://jakubkocerha.github.io/milestonep1-my-arctic-life/
+The link to the repository can be found here - https://github.com/JakubKocerha/milestonep1-my-arctic-life
+
+### Forking the GitHub Repository
+- By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JakubKocerha/milestonep1-my-arctic-life)
+    2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+    3. You should now have a copy of the original repository in your GitHub account.
 
 ## Credits
 ### Content
 #### Fonts
-[Google Fonts](https://fonts.google.com/)
+- [Google Fonts](https://fonts.google.com/)
+    * Font for main heading _Mountains of Christmas_.
+    * Font for the rest of the site _Lato_.
+    * Fallback font _Sans Serif_.
 #### HTML codes adopted from other sources:
 [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
 - Grid system
@@ -190,7 +215,7 @@ The live link can be found here - https://jakubkocerha.github.io/milestonep1-my-
     - link for post method from Code Institute _The textarea Challenge_ to validate the functionality of the [Form](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/643317b091da4eef98fe9e0812a71715/)
     - overriding colors and bootstrap box-shadow with help of [Developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
-- Meta links
+- `<Meta>` elements
     - meta and stylesheets copied from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/59591be08b13436ebe782f57967be07a/)
 
 - Button
@@ -201,6 +226,7 @@ The live link can be found here - https://jakubkocerha.github.io/milestonep1-my-
 1. Footer copyright
     - taken from [Love2dev.com](https://love2dev.com/blog/html-website-copyright/)
 2. Other textual content - Jakub Kocerha
+3. Readme.md - some content for writting this readme.md file was taken from [Code Institute README.md samples](https://github.com/Code-Institute-Solutions/SampleREADME) and [Code institure readme-tepmlate](https://github.com/Code-Institute-Solutions/readme-template).
 
 #### External links
 ##### Find out more! buttons

@@ -83,7 +83,7 @@ section .heading {
 
 /*-------------------Hover.css */
 
-/* :hover style taken from Code institute tutorials, customised with hover collections https://ianlunn.github.io/Hover/*/
+/* :hover style taken from Code institute tutorials, modified with hover collections https://ianlunn.github.io/Hover/*/
 /* .active for nav links debugging solved with help of Fatima Aminu tutor*/
 .active {
     background-color: rgba(50, 82, 22, 0.5);
