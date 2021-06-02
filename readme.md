@@ -73,6 +73,8 @@ This project has two basic aspects:
 * [Gitpod](https://www.gitpod.io/)
 * [Pixlr](https://pixlr.com/)
 * [Balsamiq](https://balsamiq.com/)
+* [Cdnjs libraries](https://cdnjs.com/libraries/hover.css/2.1.1)
+* [Font Awsome](https://fontawesome.com/)
 
 
 ## Testing
