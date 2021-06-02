@@ -5,7 +5,7 @@ This project has two basic aspects:
 * __Environmental__
 
 1. Experimental
-- The site intends to find an alternative for people living in urban areas to spend their holidays or change their lifestyles. The focus is to make them experience a very simple or even primitive way of living in periods of a lifetime, compromise their comfort, and find a way to make them content about those choices. 
+- The site intends to find an alternative for people living in urban areas to spend their holidays or change their lifestyles. The focus is to make users experience a very simple or even primitive way of living in periods of life, compromise their comfort, and find a way to make them content about those choices. 
 
 2. Environmental
 - The right, meaningful and explanatory guidance should help the target group of people attain a stronger relationship to nature materially so crucial to their comfort zones wrapped in the city life. Their overall attitude should reach more understanding through participation and a careful approach to living in one of the last pristine natural environments left in Europe.
@@ -15,8 +15,8 @@ This project has two basic aspects:
 ### Existing Features
 
 - __Navigation Bar__
-    - The navigation menu is identically featured on all four pages of the site.  It contains responsive links to all of the pages without reverting from any actual page to the home page. 
-    - [Hover effect](https://ianlunn.github.io/Hover/) .hvr-radial-out" was used by inserting [external cdnjs library](https://cdnjs.com/libraries/hover.css/2.1.1) stylesheet in `<head>` element. The shade of green associates the main theme of the site.
+    - The navigation menu is identically featured on all four pages of the site.  It contains responsive links to all pages without reverting from any actual page to the home page.
+    - [Hover effect](https://ianlunn.github.io/Hover/) ".hvr-radial-out" was used by inserting [external cdnjs library](https://cdnjs.com/libraries/hover.css/2.1.1) stylesheet in `<head>` element. The shade of green associates the main theme of the site.
 
 ![Nav bar](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/navbar.jpg)
 
@@ -26,7 +26,7 @@ This project has two basic aspects:
 ![Landing page](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/background-main.jpg)
 
 - __Carousel section__
-    - The Bootstrap based carousel section contains a slideshow of few images related to the guide's life presented on the site.
+    - The Bootstrap-based carousel section contains a slideshow of few images related to the guide's life presented on the site.
 
 ![Carousel section](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/carousel.jpg) 
 
@@ -61,9 +61,9 @@ This project has two basic aspects:
 
 ### Features To Implement
 
-* More multimedia content(photos, videos, audio) from life and environment of presented guide.
+* More multimedia content(photos, videos, audio) from the life and the environment of site's presented guide.
 * Guide's stories about critical moments and difficult conditions in the mountains(weather changes, injuries, broken equipment, etc.) and their solutions.
-* Real action="#" link for collecting the posted data via form in join-me.html
+* Real action="#" link for collecting the posted data via form in join-me.html.
 
 ## Main technologies used
 * HTML5
@@ -79,8 +79,8 @@ This project has two basic aspects:
 
 ### Visual testing
 
-* Google Devtools and its Toggle device toolbar with (responsive rule and grid blocks)
-* Github deployed [My Arctic Life page](https://jakubkocerha.github.io/milestonep1-my-arctic-life/) on smartphone Samsung Galaxy Xcover Pro, laptop HP ProBook x360 11 G3 EE and Dell screen res. 1920 x 1080px.
+* Google Devtools and its Toggle device toolbar with (responsive rule, grid blocks and given default mobile devices).
+* Github deployed [My Arctic Life page](https://jakubkocerha.github.io/milestonep1-my-arctic-life/) on smartphone Samsung Galaxy Xcover Pro, laptop HP ProBook x360 11 G3 EE, and Dell screen res. 1920 x 1080px.
 * Browsers used for testing - Google Chrome, Microsoft Edge.
 
 ### Form post/action link testing
@@ -90,8 +90,7 @@ This project has two basic aspects:
 ### Validator testing
 - HTML [W3C validator](https://validator.w3.org/) using URI of the site deployed to Github.
     1. [index.html W3C validator](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Findex.html)
-        * No errors were returned. 
-        * Recommendation of validator to implement h2-h6 heading ignored for the intent of design to implement only carousel slideshow with photo content in the main section.
+        * No errors were returned.
 
     2. [why-arctic.html W3C validator](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Fwhy-arctic.html)
         * No errors were returned.
@@ -101,8 +100,8 @@ This project has two basic aspects:
         * Two stray Div end tags in markdown reported on line 225 and 226. Both deleted.
 
     4. [join-me.html W3C validator](https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Fjoin-me.html)
-        * Error 1 - __duplicate input ID__ - caused by incorrect modifying of Bootstrap form input markup. The second input ID and related label attribute changed from exampleFormControlInput1 into exampleFormControlInput2 in . New ID was added to style.css for the rules styling the color of the text. The color of the placeholder text in the input fields was targeted with a new class .placeholder and styled in style.css.
-        * Error 2 - __attribute value not allowed on element select at this point__ - caused inattentively and was deleted. The markup already contained attribute _name_ with _value_ **outdoor-experience** which will be used for addressing the posted value of a selected option.
+        * Error 1 - __duplicate input ID__ - caused by incorrect modifying of Bootstrap form input markup. The second input ID and related label attribute changed from exampleFormControlInput1 into exampleFormControlInput2 in . A new ID was added to style.css for the rules styling the color of the text. The color of the placeholder text in the input fields was targeted with a new class .placeholder and styled in style.css.
+        * Error 2 - __attribute value not allowed on element select at this point__ - caused inattentively and was deleted. The markup already contained attribute _name_ with _value_ **outdoor-experience**, which will be used for addressing the posted value of a selected option.
 
 - CSS [W3C validator](https://jigsaw.w3.org/css-validator/)
     1. Validation of the site URI deployed on Github [My Arctic Life](https://jakubkocerha.github.io/milestonep1-my-arctic-life/)
@@ -128,31 +127,34 @@ This project has two basic aspects:
     * Large
 
 * 5 media queries
-    * The first media query layout and styling of content is for small devices like smartphones. It's intent was to make the layout of the content more appealing and easier to read from sizing, margin, paddings to layout of navbar, centering of text and additional back-to-top button for quicker navigation back to menu of the site. 
-    * The rest of the queries is focused on Bootstrap card bodies and their resizing to fit the text and stay leveled while changing the the resolution of the screen. None of the cards gets unevenly stretched beyond the rest of the cards while changing the resolution of the site with current content. 
-    Cards sequenced to block for _small_ devices, in sequence of two cards in a row for _small_ and _medium_ devices and in sequence of four cards for _large_ and bigger devices
-    * The site is mainly designed for smartphones, tablets and laptops and the content might appear visualy small on screens with very high resolution. 
+    * The first media query layout and styling of content is for small devices like smartphones. It intended to make the layout of the content more appealing and easier to read from sizing, margin, paddings to the layout of the navbar, centering of text, and additional back-to-top button for quick navigation back to the menu of the site. 
+    * The rest of the queries are focused on Bootstrap card bodies and their resizing to fit the text and stay leveled while changing the screen's resolution. None of the cards gets unevenly stretched beyond the rest of the cards while changing the resolution of the site with current content. 
+    * Cards sequenced to block for extra-small devices, in the sequence of two cards in a row for small and medium devices, and four cards for large and bigger devices.
+    * The site is mainly designed for smartphones, tablets, and laptops, and the content might appear visually small on screens with very high resolution. 
     
-### Bugs
-* Commonly known bug with very low resolution, ca <200px causes the float of the content to the left and creates a gap on the right side of the screen.
-* Homepage features on iPad Pro don't cover the whole height of the screen.
+
 
     
 ### Wireframes
-- Links to wireframes bellow show the basic structure of each page on mobile device, tablet and laptop.
+- Links to wireframes below show the basic structure of each page on a mobile device, tablet, and laptop.
 
 1. [Wireframe Home](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page1-project1mainhome.png)
 2. [Wireframe Why Arctic?](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page2-projec1twhyarctic.png)
 3. [Wireframe Life](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page3-project1life.png)
 4. [Wireframe Join-me](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/readme-media/page4-project1joinme.png)
 
-### Debugging
+### Bugs and Debugging
+#### Bugs
+1. A commonly known bug with very low resolution, ca <200px, causes the float of the content to the left and creates a gap on the right side of the screen.
+2. Homepage features on iPad Pro don't cover the whole height of the screen.
+
+#### Debugging
 1. Use of _"pointer-events: none;"_ targeting _.nohover_ class
     - Issue: when hovering over the label item with text "Email Address:", :hover rule got triggered above in the input for the label "Full Name:".
     The rule _"pointer-events: none;"_ solved the problem.
 2. !important
     - Issue: default colors and box-shadows in buttons, inputs, dropdown menu, text-area.
-    Overriden with !important.
+    Overridden with !important.
 3. Carousel
     - Issue: uneven slide between carousel images impacting the layout of bordering features caused by images of uneven sizes of images.
     Solved with default editing of images into the same size. 
@@ -160,28 +162,28 @@ This project has two basic aspects:
 ## Deployment
 ### GitHub Pages
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
-    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JakubKocerha/milestonep1-my-arctic-life)
-    2. At the top of the Repository (not top of page), navigate to the _Settings_ button.
-    3. Scroll down the Settings page until you locate the _GitHub Pages_ Section.
-    4. Under _Source_, click the dropdown called _None_ and select _Master Branch_ and press _Save_. 
-    5. Once the _Master branch_ has been selected, the page will be automatically refreshed with a detailed ribbon including a link to the site to indicate the successful deployment. 
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JakubKocerha/milestonep1-my-arctic-life)
+2. At the top of the Repository (not top of page), navigate to the _Settings_ button.
+3. Scroll down the Settings page until you locate the _GitHub Pages_ Section.
+4. Under _Source_, click the dropdown called _None_ and select _Master Branch_ and press _Save_. 
+5. Once the _Master branch_ has been selected, the page will be automatically refreshed with a detailed ribbon including a link to the site to indicate the successful deployment. 
 
-The live link can be found here - https://jakubkocerha.github.io/milestonep1-my-arctic-life/
-The link to the repository can be found here - https://github.com/JakubKocerha/milestonep1-my-arctic-life
+- The live link can be found here - https://jakubkocerha.github.io/milestonep1-my-arctic-life/
+- The link to the repository can be found here - https://github.com/JakubKocerha/milestonep1-my-arctic-life
 
 ### Forking the GitHub Repository
 - By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
-    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JakubKocerha/milestonep1-my-arctic-life)
-    2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-    3. You should now have a copy of the original repository in your GitHub account.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JakubKocerha/milestonep1-my-arctic-life)
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
 
 ## Credits
 ### Content
 #### Fonts
 - [Google Fonts](https://fonts.google.com/)
-    * Font for main heading _Mountains of Christmas_.
+    * Font for the main heading _Mountains of Christmas_.
     * Font for the rest of the site _Lato_.
-    * Fallback font _Sans Serif_.
+    * The fallback font _Sans Serif_.
 #### HTML codes adopted from other sources:
 [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
 - Grid system
@@ -193,40 +195,40 @@ The link to the repository can be found here - https://github.com/JakubKocerha/m
 
 #### Pseudo-class effects:
 - Nav links 
-    - HTML code taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/f99dac3afcfe4b2caf8d576273aea3e6/)
-    - Overriding of Bootstrap, implementing and correct targeting of :active styling for Navlinks with help of Code Institute tutor Fatima Aminu
+    - HTML code taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/f99dac3afcfe4b2caf8d576273aea3e6/).
+    - Overriding of Bootstrap, implementing and correct targeting of :active styling for Navlinks with the help of Code Institute tutor Fatima Aminu.
     
 - Carousel
-    - external Javascript links copied from [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/) 
+    - External Javascript links copied from [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/).
 
 - Footer
-    - HTML code and CSS styling taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/)
-    - Footer icons taken from [Font Awsome](https://fontawesome.com/)
+    - HTML code and CSS styling taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/).
+    - Footer icons taken from [Font Awsome](https://fontawesome.com/).
 
 - Form, Buttons
-    - styling and usage taken from [Stackoverflow](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click), [W3S](https://www.w3schools.com/css/css_pseudo_classes.asp) and [Stackoverflow :focus class](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click)
+    - styling and usage taken from [Stackoverflow](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click), [W3S](https://www.w3schools.com/css/css_pseudo_classes.asp) and [Stackoverflow :focus class](https://stackoverflow.com/questions/42134731/css-change-button-style-after-click).
 
 - Form label 
-    - disabling of hover effect taken from [Stackoverflow](https://stackoverflow.com/questions/26754497/css-disable-hover-effect)
+    - disabling of hover effect taken from [Stackoverflow](https://stackoverflow.com/questions/26754497/css-disable-hover-effect).
     
 
 #### Others:
 - Form 
-    - link for post method from Code Institute _The textarea Challenge_ to validate the functionality of the [Form](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/643317b091da4eef98fe9e0812a71715/)
-    - overriding colors and bootstrap box-shadow with help of [Developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+    - Link for post method from Code Institute _The textarea Challenge_ to validate the functionality of the [Form](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/643317b091da4eef98fe9e0812a71715/).
+    - Overriding colors and Bootstrap box-shadow with help of [Developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity).
 
 - `<Meta>` elements
-    - meta and stylesheets copied from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/59591be08b13436ebe782f57967be07a/)
+    - Meta and stylesheets copied from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/59591be08b13436ebe782f57967be07a/).
 
 - Button
-    - positioning of card buttons implemented with help of [Stackoverflow](https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card)
+    - Positioning of card buttons implemented with help of [Stackoverflow](https://stackoverflow.com/questions/48406628/bootstrap-align-button-to-the-bottom-of-card).
 
 ### Media
 #### Textual content
 1. Footer copyright
-    - taken from [Love2dev.com](https://love2dev.com/blog/html-website-copyright/)
-2. Other textual content - Jakub Kocerha
-3. Readme.md - some content for writting this readme.md file was taken from [Code Institute README.md samples](https://github.com/Code-Institute-Solutions/SampleREADME) and [Code institure readme-tepmlate](https://github.com/Code-Institute-Solutions/readme-template).
+    - taken from [Love2dev.com](https://love2dev.com/blog/html-website-copyright/).
+2. Other textual content - Jakub Kocerha.
+3. Readme.md - some content for writting readme.md file was taken from [Code Institute README.md samples](https://github.com/Code-Institute-Solutions/SampleREADME) and [Code Institute readme-tepmlate](https://github.com/Code-Institute-Solutions/readme-template).
 
 #### External links
 ##### Find out more! buttons
@@ -245,11 +247,11 @@ The link to the repository can be found here - https://github.com/JakubKocerha/m
 - [Twitter](https://twitter.com/)
 
 #### Images
-- All used photos except those specified bellow taken by Jakub Kocerha and Tuva Holmquist, who has given consent for use of their images solely for this web site
+- All used photos except those specified below were taken by Jakub Kocerha and Tuva Holmquist, who has given consent to use their images solely for this website.
 
-- Photo for the card _Childhood dream_ downloaded and edited from Open source site pexels.com [Author Stein Egil Liland](https://www.pexels.com/photo/aurora-borealis-1933239/)
-- Photo for the card _Adventure_ downloaded and edited from Open source site pexels.com [Author Spencer Gurley](https://www.pexels.com/photo/photo-of-person-on-kayak-1497585/)
-- Photo for the card _Never forget_ downloaded and edited from Open source site pexels.com [Author Pavel Hajek](https://www.pexels.com/photo/a-mosquito-on-green-leaf-in-close-up-photography-4056767/)
-- Photo for the Form container background downloaded and edited from Open source site pexels.com [Author Gantas Vaičiulėnas](https://www.pexels.com/photo/hands-over-a-bonfire-4323761/)
+- Photo for the card _Childhood dream_ downloaded and edited from Open source site pexels.com [Author Stein Egil Liland](https://www.pexels.com/photo/aurora-borealis-1933239/).
+- Photo for the card _Adventure_ downloaded and edited from Open source site pexels.com [Author Spencer Gurley](https://www.pexels.com/photo/photo-of-person-on-kayak-1497585/).
+- Photo for the card _Never forget_ downloaded and edited from Open source site pexels.com [Author Pavel Hajek](https://www.pexels.com/photo/a-mosquito-on-green-leaf-in-close-up-photography-4056767/).
+- Photo for the Form container background downloaded and edited from Open source site pexels.com [Author Gantas Vaičiulėnas](https://www.pexels.com/photo/hands-over-a-bonfire-4323761/).
 
 
