@@ -114,13 +114,8 @@ This project has two basic aspects:
     2.  Validation - the direct input of [style.css](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/assets/css/style.css) with [(Jigsaw) validator direct input](https://jigsaw.w3.org/css-validator/#validate_by_input)   
         * No error found
 
-### Google Developer Tools Lighthouse.
-- Stable rating
-    * 98% Accessibility
-    * 100% SEO
-- Fluctuating rating
-    * 80% Performance
-    * 85% Best practices
+### Google Developer Tools Lighthouse
+Report from [PageSpeedInsight](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Findex.html).
 
 ### Responsive Design:
 * Bootstrap grid applied in HTML markup
