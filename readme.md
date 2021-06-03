@@ -28,15 +28,15 @@ This project has two basic aspects:
 
 ### Design
 #### Colour Scheme
- - The main colors used based on the site's designer decision:
- * #2e2929
- * #e9faed
- * rgb(50, 82, 22)
- * rgb(233, 250, 237)
- * rgb(152, 0, 0)
- * rgb(46, 41, 41)
- * rgb(19, 53, 204)
- * rgb(223, 48, 48)
+- The main colors used based on the site's designer decision:
+    * #2e2929
+    * #e9faed
+    * rgb(50, 82, 22)
+    * rgb(233, 250, 237)
+    * rgb(152, 0, 0)
+    * rgb(46, 41, 41)
+    * rgb(19, 53, 204)
+    * rgb(223, 48, 48)
 
 #### Typography
 - Font for the main heading _Mountains of Christmas_ chosen for its divergence from the rest of the content and visual memorizing by the user. Font for the rest of the site textual content often used in combination with _Mountains of Christmas_ was chosen _Lato_.
