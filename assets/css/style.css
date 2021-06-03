@@ -98,8 +98,8 @@ section .heading {
 /*-------------------Main section - general*/
 
 .heading-container {
-    background-color: rgb(152, 0, 0, 0.4);
-    border: 3px solid rgb(152, 0, 0, 0.01);
+    background-color: rgba(152, 0, 0, 0.4);
+    border: 3px solid rgba(152, 0, 0, 0.01);
     margin-bottom: 50px;
     padding: 0;
 }

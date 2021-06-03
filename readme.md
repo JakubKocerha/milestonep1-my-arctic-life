@@ -1,5 +1,6 @@
 # My Artic life
 
+
 This project has two basic aspects: 
 * __Experimental__
 * __Environmental__
@@ -9,6 +10,41 @@ This project has two basic aspects:
 
 2. Environmental
 - The right, meaningful and explanatory guidance should help the target group of people attain a stronger relationship to nature materially so crucial to their comfort zones wrapped in the city life. Their overall attitude should reach more understanding through participation and a careful approach to living in one of the last pristine natural environments left in Europe.
+
+## User Experience (UX)
+### User stories
+#### First Time visitor Goals
+1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the life of the presented person.
+2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+3. As a First Time Visitor, I want to find out more about the person living, to me, in the very unconventional and foreign environment with which I don't have any experience. I also want to locate his social media links to see his followings on social media to determine how authentic the site's content is.
+
+#### Returning Visitor Goals
+1. As a returning visitor, I want to be able to follow the life events of the person. 
+2. As a returning visitor, I want to have easy contact with the person.
+
+#### Frequent User Goals
+1. As a Frequent User, I want to check any newly added photos a videos.
+
+
+### Design
+#### Colour Scheme
+ - The main colors used based on the site's designer decision:
+ * #2e2929
+ * #e9faed
+ * rgb(50, 82, 22)
+ * rgb(233, 250, 237)
+ * rgb(152, 0, 0)
+ * rgb(46, 41, 41)
+ * rgb(19, 53, 204)
+ * rgb(223, 48, 48)
+
+#### Typography
+- Font for the main heading _Mountains of Christmas_ chosen for its divergence from the rest of the content and visual memorizing by the user. Font for the rest of the site textual content often used in combination with _Mountains of Christmas_ was chosen _Lato_.
+- As a fallback font in case the other main fonts don't work was chosen Sans Serif.
+
+#### Imagery
+- Imagery is the core component of the site. It transforms the user's abstract visualizations of the arctic into the specificity of the location. It is striking, contrastive, and clean. 
+
 
 ## Features
 
@@ -114,6 +150,26 @@ This project has two basic aspects:
     2.  Validation - the direct input of [style.css](https://github.com/JakubKocerha/milestonep1-my-arctic-life/blob/master/assets/css/style.css) with [(Jigsaw) validator direct input](https://jigsaw.w3.org/css-validator/#validate_by_input)   
         * No error found
 
+### Testing User Stories from User Experience (UX) Section
+#### First Time visitor Goals
+- As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the life of the presented person.
+    * The user's main focus is to attain easy orientation with a minimum of textual content. The main heading My Arctic life and Leave the city behind subheading subconsciously connects with the dramatic background photo of the Arctic landscape before dusk and clear navigation links. The site brings a carousel slideshow with the first photo of the person the site is related to. 
+    * The navigation menu meaningfully leads the user from reasoning _Why Arctic?_ over factual personal events and lifestyle _Life_ to the page offering the connection with the site's related person in _Join me!_ by a special project requiring filling the form with name, email, level of experience with the outdoor life and personal motivation to join in. 
+- As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
+    * The easy and intuitive navigation menu includes _back to top_ button bringing the user to the top of the current page. It was chosen for the devices with less than 576px and excludes the main page with the content having no need of the _back to top_ button. The button comfortably fits the thumb of a right hand when being at the bottom of the page.
+- As a First Time Visitor, I want to find out more about the person living, to me, in the very unconventional and foreign environment with which I don't have any experience. I also want to locate his social media links to see his followings on social media to determine how authentic the site's content is.
+    * The user has the possibility to enter the site's main person social media links to Youtube, Facebook, or Twitter and get better informed throughout the videos, photos, and stories.
+    * The Font Awsome links are situated at the bottom of every page. 
+
+#### Returning Visitor Goals
+- As a returning visitor, I want to be able to follow the life events of the person. 
+    * The page owner is supposed to maintain the user's attention throughout the regular addition and updates of the site's content and/or related them to social media links.
+- As a returning visitor, I want to have easy contact with the person.
+    * The social media linked from the site might be the way of the public everyday contact. However,  the users are led to communicate through the form to join the project. The following communication will be via email. 
+ #### Frequent User Goals
+- As a Frequent User, I want to check any newly added photos and videos.
+    * Majority of the new content will be added on social media like Youtube with the site link to My Arctic Life to allow new participants to join the project. 
+
 ### Google Developer Tools Lighthouse
 Report from [PageSpeedInsight](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fjakubkocerha.github.io%2Fmilestonep1-my-arctic-life%2Findex.html).
 
@@ -144,6 +200,7 @@ Report from [PageSpeedInsight](https://developers.google.com/speed/pagespeed/ins
 #### Bugs
 1. A commonly known bug with very low resolution, ca <200px, causes the float of the content to the left and creates a gap on the right side of the screen.
 2. Homepage features on iPad Pro don't cover the whole height of the screen.
+3. Warning generated by validator while testing HTML code about structural heading outline referring to use of h3 both in the subheading of the main heading and in the main heading of the section left unchanged as it is the intent of the design and as it relates to two different features of the page.
 
 #### Debugging
 1. Use of _"pointer-events: none;"_ targeting _.nohover_ class
@@ -221,9 +278,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
     - HTML code taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/f99dac3afcfe4b2caf8d576273aea3e6/).
     - Overriding of Bootstrap, implementing and correct targeting of :active styling for Navlinks with the help of Code Institute tutor Fatima Aminu.
     
-- Carousel
-    - External Javascript links copied from [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/).
-
 - Footer
     - HTML code and CSS styling taken from [Code Institute tutorial](https://learn.codeinstitute.net/courses/course-v1:codeinstitute+FE+2017_T3/courseware/616289d66b5641a3808cc43e53842695/b51f7b8b815c4bcd9979d2281b6d97a9/).
     - Footer icons taken from [Font Awsome](https://fontawesome.com/).
@@ -236,6 +290,9 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
     
 
 #### Others:
+- Carousel
+    - External Javascript links copied from [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/).
+
 - Form 
     - Link for post method from Code Institute _The textarea Challenge_ to validate the functionality of the [Form](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/643317b091da4eef98fe9e0812a71715/).
     - Overriding colors and Bootstrap box-shadow with help of [Developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity).
